@@ -137,6 +137,78 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/*---------------------------------*/
+
+
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.shadow {
+  -webkit-box-shadow: 1px 6px 11px -3px #000000; 
+  box-shadow: 1px 6px 11px -3px #000000;
+}
+
+section.contact form {
+  max-width: 500px;
+  margin: 30px auto;
+}
+section.contact input,
+section.contact textarea {
+  width: 100%;
+  
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: var(--ui-radius-button);
+  background-color: var(--ui-color-n-050);
+}
+
+
+section.contact textarea {
+  height: 200px;
+  border-radius: 20px;
+  border: 2px solid;
+}
+
+
+/*--------------------------------------------------------------
+|
+| 6.2 BUTTON
+|
+--------------------------------------------------------------*/
+
+.ui-component-button {
+  border: .0625rem solid var(--ui-color-brand);
+  border-radius: var(--ui-radius-button);
+  display: block;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+}
+
+.ui-component-button-primary {
+  background-color: var(--ui-color-brand);
+  color: var(--ui-color-typography-button);
+}
+
+.ui-component-button-secondary {
+  background-color: var(--ui-color-background-primary);
+  color: var(--ui-color-brand);
+}
+
+.ui-component-button-big,
+.ui-component-button-normal { padding: .75rem 1rem .875rem; }
+
+.ui-component-button-big { width: 100%; }
+
+.ui-component-button-normal { width: fit-content; }
+
+
 /*--------------------------------------------------------------
 3.0 TYPOGRAPHY
 --------------------------------------------------------------*/
